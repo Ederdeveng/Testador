@@ -126,7 +126,7 @@
         <section class="cards" id="solucoes">
             <article class="card-item"> 
                 <h3>⚡ Entrega rápida</h3>
-                <p>Páginas web focadas em converter visitantes em clientes.<mark>Mm até 72 horas</mark>seu site já esta no ar.</p>
+                <p>Páginas focadas em converter visitantes em clientes. Seu site no ar <mark>em até 72 horas</mark></p>
             </article>
             <article class="card-item"> 
                 <h3>🎯 Soluções sob medida</h3>
@@ -134,14 +134,14 @@
             </article>
             <article class="card-item"> 
                 <h3>💬 Tem uma ideia?</h3>
-                <p>Traga para nós,<mark>juntos fazemos</mark> seu projeto tomar forma e acontecer.</p>
+                <p>Traga para nós,<mark>juntos faremos</mark> seu projeto tomar forma e se tornar real.</p>
             </article>
         </section>
 
         <!-- Seção Teste -->
         <section class="secao-teste imagem_fundo_2">
-            <h4>Atualização de Sistemas</h4>
-            <time datetime="2026-12-31">31 de dezembro de 2026</time>
+            <h4>Tecnologia & Performance Contínua</h4>
+            <time id="data-sistema" datetime=""></time>
             <p>Sistemas otimizados e seguros.</p>
         </section>
 
@@ -260,6 +260,30 @@
             <p>Endereço: Rua das Maiores Constelações, 1000 - Centaurus - Cosmos</p>
         </address>
     </footer>
+
+    <!-- Script para atualizar a data e hora na seção teste (javascript)-->
+    <script>
+        function atualizarDataHora() {
+            const hoje = new Date();
+
+    // Formata data e hora incluindo os segundos
+            const dataHoraFormatada = hoje.toLocaleDateString('pt-BR', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            }) + ' às ' + hoje.toLocaleTimeString('pt-BR'); // Adiciona a hora exata com segundos
+
+            const el = document.getElementById('data-sistema');
+                if (el) {
+                el.textContent = `${dataHoraFormatada}`;
+                el.setAttribute('datetime', hoje.toISOString());
+                }
+        }
+
+  // Executa imediatamente e depois atualiza a cada 1 segundo (1000ms)
+        atualizarDataHora();
+        setInterval(atualizarDataHora, 1000);
+    </script>
 
 </body>
 </html>
