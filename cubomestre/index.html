@@ -9,40 +9,45 @@
 
     <link rel="stylesheet" href="CSS/styleHome.css">
     
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <!-- Topo com logo botao whats -->
     <header class="topo-menu">
         <div class="logo-topo">
             <img class="logo-img" src="img/logo3-removebg-preview.png" alt="Cubo Mestre - Tecnologia">
             <span class="texto-claro">Cubo Mestre</span>
         </div>
 
-        <div class="link-interno cartao-vidro">
-            <p><a href="#pacotes">Fale com a gente</a></p>
+        <div class="fale-com">
+            <p><a href="https://wa.me/5511922060226?text=Ol%C3%A1!%20Tenho%20um%20projeto%20sob%20medida%20e%20gostaria%20de%20falar%20com%20um%20especialista." target="_blank"><i class="fa-brands fa-whatsapp verde"></i>Fale com a gente</a></p>
         </div>
 
+        <!-- Nav Lista-Menu -->
+
         <nav class="menu">
-            <ul class="lista-menu link-interno">
-                <li><a href="#projetos">Projetos</a></li>
+            <ul class="lista-menu">
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#orcamento">Orçamento</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <li><a href="#sobre">Sobre</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <main>
         <div class="linha"></div>
 
+        <!-- Conteudo Principal Hero da pagina com imagem de fundo mulher analisando dados -->
+
         <section class="conteudo-principal">
             <span class="texto-conteudo">
-                <span class="ponto-pulsante"></span> Engenharia Inteligente de Software
+                <span class="ponto-pulsante"></span>Soluções Digitais Descomplicadas
             </span>
-            <h1>Desenvolvimento na medida, para <span class="texto-gradiente">transformar seu negócio e aumentar suas vendas.</span></h1>
+            <h1>Desenvolvimento sob medida, para <span class="texto-gradiente">transformar seu negócio e aumentar suas vendas.</span></h1>
             <p class="texto-conteudo">
                 Criamos a presença digital da sua empresa de forma simples, transparente e sem complicações técnicas.
             </p>
@@ -50,21 +55,26 @@
 
         <div class="linha"></div>
 
-        <section class="conteudo-normal">
-            <h2 class="texto-gradiente"><strong>Organize sua empresa sem complicações.</strong></h2>
+        <!-- Anuncio de Serviços -->
+
+        <section class="conteudo-normal" id="servicos">
+            <h2 class="texto-gradiente" ><strong>Organize sua empresa sem complicações.</strong></h2>
             <p class="texto-claro">Ter seu próprio site ou sistema pode custar menos do que você imagina — um 
                 <span class="texto-gradiente">investimento inteligente</span> 
                 que transforma suas ideias em produtos rentáveis.
             </p>
-            <div class="card-duplo">
+            <!-- 3 cards médios com foto e descrição de serviços -->
+
+            <div class="card-servicos">
                 <article class="card">
                     <div class="foto">
-                        <img src="img/desenvolvimeWeb.jpg" alt="Interface de software desenvolvida pela Cubo Mestre">
+                        <img src="img/desenvolvimeWeb.jpg" alt="Desenvolvimento WEB">
                     </div>
                     <div class="texto-card">
                         <h3>Desenvolvimento Web</h3>
                         <p class="texto-escuro">
-                            Sites e sistemas modernos que funcionam perfeitamente no celular, rápidos e fáceis de usar.
+                           Sites e sistemas modernos de alta performance: rápidos, fáceis de usar e 100% 
+                           otimizados para tablets e celular.
                         </p>
                         <a href="#link1">Saiba Mais</a>
                     </div>   
@@ -78,6 +88,7 @@
                         <h3>Estrutura em Nuvem</h3>
                         <p class="texto-escuro">
                             Seu sistema sempre funcionando, seguro e pronto para crescer com o seu negócio.
+                            
                         </p>
                         <a href="#link2">Saiba Mais</a>
                     </div>   
@@ -85,34 +96,37 @@
 
                 <article class="card">
                     <div class="foto">
-                        <img src="img/services.jpg" alt="Interface de software desenvolvida pela Cubo Mestre">
+                        <img src="img/services.jpg" alt="Serviços Cubo Mestre">
                     </div>
                     <div class="texto-card">
-                        <h3>Tecnologia de Ponta a Ponta</h3>
+                        <h3>Sistema e Infraestrutura</h3>
                         <p class="texto-escuro">
-                            Cuidamos da parte física das suas máquinas aos sistemas digitais, garantindo tudo funcionando sem complicações.
+                            Cuidamos de toda a estrutura digital para seu negócio. 
+                            Soluções estáveis e protegidas para você rodar sem complicações.
                         </p>
-                        <a href="#link1">Saiba Mais</a>
+                        <a href="#orcamento">Saiba Mais</a>
                     </div>   
                 </article>
 
             </div>
+           
         </section>
 
         <div class="linha"></div>
-        
+
+        <!-- Anuncio imagem de fundo homem com celular -->
         <aside class="anuncio imagem_fundo_1">
             <h2 class="">Transforme sua ideia em código</h2>
             <p class="texto-claro">Entre em contato hoje mesmo e descubra como podemos acelerar seu projeto.</p>
-            <a href="#contato">Solicitar Orçamento</a>
+            <a href="#orcamento">Solicitar Orçamento</a>
         </aside>
 
         <div class="linha"></div>
 
-        <section class="cards">
+        <section class="cards" id="solucoes">
             <article class="card-item"> 
                 <h3>⚡ Entrega rápida</h3>
-                <p>Páginas WEB focadas em divulgar seu negócio,<mark>em até 72 horas</mark>seu site já esta no ar.</p>
+                <p>Páginas web focadas em converter visitantes em clientes.<mark>Mm até 72 horas</mark>seu site já esta no ar.</p>
             </article>
             <article class="card-item"> 
                 <h3>🎯 Soluções sob medida</h3>
@@ -124,11 +138,11 @@
             </article>
         </section>
 
+        <!-- Seção Teste -->
         <section class="secao-teste imagem_fundo_2">
             <h4>Atualização de Sistemas</h4>
             <time datetime="2026-12-31">31 de dezembro de 2026</time>
             <p>Sistemas otimizados e seguros.</p>
-            <!---->
         </section>
 
         <section class="cards-two">
@@ -152,11 +166,11 @@
         <div class="linha"></div>
         
         <!-- SEÇÃO DE PACOTES E SERVIÇOS -->
-        <section id="pacotes" class="secao-pacotes">
+        <section id="orcamento" class="secao-pacotes">
             <div class="cabecalho-secao">
                 <span class="texto-conteudo">
                     <span class="ponto-pulsante"></span> Escolha seu plano e fale com a gente</span>
-                <h2><p>Não importa o tamanho da sua empresa,<mark>nós temos a solução ideal</mark>para o seu momento.   </p></h2>
+                <h2>Não importa o tamanho da sua empresa,<mark>nós temos a solução ideal</mark>para o seu momento.</h2>
                 <p class="texto-escuro">Seja você um empreendedor individual dando os primeiros passos ou uma pequena empresa em expansão,
                      adaptamos nossa tecnologia à sua realidade. Criamos soluções sob medida, acessíveis e escaláveis para resolver seus desafios 
                     atuais e preparar o seu negócio para o próximo nível — sem complicações e no seu ritmo.</p>
@@ -180,7 +194,7 @@
                         <li>Domínio e hospedagem inclusos</li>
                     </ul>
                     
-                    <a href="https://wa.me/5511922060226?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Presen%C3%A7a%20Digital." class="btn-pacote btn-secundario">
+                    <a href="https://wa.me/5511922060226?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Presen%C3%A7a%20Digital." class="btn-pacote btn-secundario" target="_blank">
                         Escolher Plano Essencial
                     </a>
                 </article>
@@ -201,7 +215,7 @@
                         <li>Treinamento de uso da plataforma</li>
                     </ul>
                     
-                    <a href="https://wa.me/5511922060226?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Neg%C3%B3cio%20Completo." class="btn-pacote btn-principal">
+                    <a href="https://wa.me/5511922060226?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Neg%C3%B3cio%20Completo." class="btn-pacote btn-principal" target="_blank">
                         Solicitar Orçamento
                     </a>
                 </article>
@@ -222,7 +236,7 @@
                         <li>Suporte técnico prioritário</li>
                     </ul>
                     
-                    <a href="https://wa.me/5511922060226?text=Ol%C3%A1!%20Tenho%20um%20projeto%20sob%20medida%20e%20gostaria%20de%20falar%20com%20um%20especialista." class="btn-pacote btn-secundario">
+                    <a href="https://wa.me/5511922060226?text=Ol%C3%A1!%20Tenho%20um%20projeto%20sob%20medida%20e%20gostaria%20de%20falar%20com%20um%20especialista." class="btn-pacote btn-secundario" target="_blank">
                         Falar com Especialista
                     </a>
                 </article>
@@ -234,12 +248,14 @@
 
     </main>
 
-    <footer>
+    <!-- Rodapé -->
+     
+    <footer id="contato">
         <div class="copy-rodape">
             <p>&reg; Cubo Mestre - Tecnologia</p>
         </div>
         <address id="contato">
-            <p>Telefone & WhatsApp: <a href="tel:5511922060226">(11) 92206-0226</a></p>
+            <p>Telefone & WhatsApp: (11) 92206-0226</p>
             <p>E-mail: <a href="mailto:suportecubo@cubomestre.com.br">suportecubo@cubomestre.com.br</a></p>
             <p>Endereço: Rua das Maiores Constelações, 1000 - Centaurus - Cosmos</p>
         </address>

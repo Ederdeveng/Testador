@@ -145,7 +145,7 @@ mark {
 }
 
 /* Botão Cartão Vidro */
-.cartao-vidro {
+.fale-com {
   border: 1px solid var(--border-glass);
   background: rgba(168, 85, 247, 0.05);
   border-radius: 30px;
@@ -153,15 +153,18 @@ mark {
   transition: all 0.3s ease;
 }
 
-.cartao-vidro a {
+.fale-com a {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   color: var(--cyan);
   font-size: 0.9rem;
   font-weight: 600;
-  padding: 2rem;
+  padding: 0.1rem 2rem;
+  gap: 10px;
 }
 
-.cartao-vidro:hover {
+.fale-com:hover {
   border-color: var(--cyan);
   background: rgba(34, 211, 238, 0.1);
   transform: translateY(-2px);
@@ -231,7 +234,7 @@ mark {
 }
 
 /* ==========================================================================
-   5. SEÇÃO DE SOLUÇÕES (CARDS DUPLOS)
+   5. SEÇÃO DE SOLUÇÕES (CARDS MÉDIOS)
    ========================================================================== */
 .conteudo-normal {
   background: var(--bg-dark);
@@ -247,7 +250,7 @@ mark {
   color: var(--text-main);
 }
 
-.card-duplo {
+.card-servicos {
   width: 100%;
   max-width: 1100px;
   display: grid;
@@ -500,78 +503,7 @@ time{
       color: #34d399;
       font-weight: bold;
     }
-/* ==========================================================================
-   8. Carrocel de paginas externas
-   ========================================================================== */
-    /* Container com largura reduzida (ex: 700px) */
-    .carrossel-container{
-      max-width: 960px;
-      margin: 20px auto;
-      font-family: sans-serif;
-      text-align: center;
-    }
-
-    /* Grid para colocar 2 iframes lado a lado */
-    .grid-iframes{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      height: 400px; /* Altura reduzida para o carrossel ficar menor */
-      margin-top: 20px;
-    }
-
-    .iframe-card{
-      width: 100%;
-      height: 100%;
-      border: 1px solid #334155;
-      border-radius: 8px;
-      overflow: hidden;
-      background-color: #0f172a;
-    }
-
-    iframe{
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    .controles{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 12px;
-    }
-
-    button{
-      padding: 8px 16px;
-      background-color: #2563eb;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    button:hover{
-      background-color: #1d4ed8;
-    }
-
-    .indicador{
-      font-size: 13px;
-      color: #94a3b8;
-    }
-
-    
-    /* Responsividade para telas pequenas (exibe 1 por vez no celular) */
-    @media (max-width: 600px) {
-      .grid-iframes {
-        grid-template-columns: 1fr;
-        height: 250px;
-      }
-      .iframe-card:nth-child(2) {
-        display: none; /* Esconde o segundo iframe no celular */
-      }
-    }
+   
 /* ==========================================================================
    9. RODAPÉ (FOOTER)
    ========================================================================== */
